@@ -18,7 +18,9 @@ namespace WPF1
 
         public EntryForm()
         {
-
+            this.Name = "";
+            this.Name = "";
+            this.ZipCode = 0;
         }
 
 
@@ -29,16 +31,12 @@ namespace WPF1
             this.ZipCode = zipcode;
         }
 
-        public String toString()
+        
+        public override String ToString()
         {
 
             return Name + " "  + address + " " + " " + ZipCode;
         }
 
-        void PrintText(object sender, SelectionChangedEventArgs args)
-        {
-            ListBoxItem lb = ((sender as ListBox).SelectedItem as ListBoxItem);
-            lb.Text = "   You selected " + name.Content.ToString() + ".";
-        }
     }
 }

@@ -25,5 +25,20 @@ namespace WPF1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+
+        {
+            EntryForm form = new EntryForm();
+
+            form.Name = name.Text;
+            form.address = address.Text;
+            form.ZipCode = Convert.ToInt32(zipcode.Text);
+
+            lb.Items.Add(form);
+
+        }
     }
+
+
 }
