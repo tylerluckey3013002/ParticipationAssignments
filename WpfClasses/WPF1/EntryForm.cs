@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace WPF1
 {
@@ -23,7 +24,21 @@ namespace WPF1
 
         public EntryForm(string name, string address, int zipcode)
         {
+            this.Name = name;
+            this.address = address;
+            this.ZipCode = zipcode;
+        }
 
+        public String toString()
+        {
+
+            return Name + " "  + address + " " + " " + ZipCode;
+        }
+
+        void PrintText(object sender, SelectionChangedEventArgs args)
+        {
+            ListBoxItem lb = ((sender as ListBox).SelectedItem as ListBoxItem);
+            lb.Text = "   You selected " + name.Content.ToString() + ".";
         }
     }
 }

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WPF1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFA4A4A4">
         <Grid.RowDefinitions>
             <RowDefinition Height="391*"/>
             <RowDefinition Height="28*"/>
@@ -22,9 +22,11 @@
         <Label Content="Name:" HorizontalAlignment="Left" Margin="60,157,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
         <Label Content="Address:" HorizontalAlignment="Left" Margin="60,222,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
         <Label Content="Zipcode:" HorizontalAlignment="Left" Margin="60,295,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="198,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
-        <TextBox HorizontalAlignment="Left" Height="34" Margin="198,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
-        <TextBox HorizontalAlignment="Left" Height="31" Margin="198,295,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox Name="address" HorizontalAlignment="Left" Height="34" Margin="198,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox Name="name" HorizontalAlignment="Left" Height="34" Margin="198,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <TextBox Name="zipcode" HorizontalAlignment="Left" Height="31" Margin="198,295,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350"/>
+        <Button Name="button1" Content="Submit" HorizontalAlignment="Left" Margin="413,344,0,0" VerticalAlignment="Top" Width="118" Height="37"/>
+        <ListBox  Name="lb" HorizontalAlignment="Left" Height="279" Margin="565,112,0,0" VerticalAlignment="Top" Width="217"/>
 
     </Grid>
 </Window>
